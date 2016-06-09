@@ -1,5 +1,5 @@
 .centered {
-  position: fixed; /* or absolute */
+  position: absolute; /* or fixed */
   top: 50%;
   left: 50%;
   /* bring your own prefixes */
