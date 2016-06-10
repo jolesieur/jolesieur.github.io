@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-<title>Page Title</title>
-</head>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PREMIERS PAS AVEC BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    
+<title>hello weather</title>
+
 <body>
-    <script type="text/javascript">
-    document.body.style.cursor = 'none';
-    </script>
     <div>
-<iframe src="http://free.timeanddate.com/clock/i58flbyf/n165/tlca2/fn16/fs48/ftb/tt0/th1/tb4" frameborder="0" width="673" height="114" align="middle"></iframe>
+<iframe src="http://free.timeanddate.com/clock/i58flbyf/n165/tlca2/fn16/fs48/ftb/tt0/th1/tb4" frameborder="0" width="673" height="114"></iframe>
 <br>
-<img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_metric_cond&pwscode=IQCTROIS4&ForcedCity=Trois-Rivieres&ForcedState=Canada&wmo=71724&language=EN" alt="Find more about Weather in Trois-Rivieres, CA" width="300" id="image"/>
-<script type="text/javascript">
-var theimg = document.getElementById("image");
-var theurl = "http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_metric_cond&pwscode=IQCTROIS4&ForcedCity=Trois-Rivieres&ForcedState=Canada&wmo=71724&language=EN";
-setInterval(function() {
-    theimg.src = theurl + '?t=' + new Date().getTime();
-}, 5000);
-</script>
+
+<h1>La météo actuelle pour <span id="current_city">(loading)</span></h1>
+        <h3><img id="icon" src=""> <span id="weather">(loading)</span>, <span id="temp">(loading)</span>°C</br></h2>
+        <span id="current_weather">(loading)</span></br>
 </div>
 </body>
+
 </html>
