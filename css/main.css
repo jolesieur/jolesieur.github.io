@@ -17,7 +17,7 @@ body{
     height:100%;
     width: 100%;
 }
-#demo{
+#image{
     /* To play around, change this to absolute */
     position: fixed;
     bottom: 0px;
