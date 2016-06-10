@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script language="JavaScript"> 
+function checkRefresh()
+{
+ if( document.refreshForm.visited.value == "" )
+ {
+ 
+alert('first ime');
+  // This is a fresh page load
+  document.refreshForm.visited.value = "1";
+ 
+  // You may want to add code here special for
+  // fresh page loads
+ }
+ else
+ {
+ 
+  }
+} 
+</script>
+	
     <!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 <title>Page Title</title>
 </head>
-<body>
-	<script type="text/javascript">
-        $(document).ready(function(){
-
-            //Check if the current URL contains '#' 
-            if(document.URL.indexOf("#")==-1)
-            {
-                // Set the URL to whatever it was plus "#".
-                url = document.URL+"#";
-                location = "#";
-
-                //Reload the page
-                location.reload(true);
-
-            }
-        });
-    </script>
-	
+<body onLoad="JavaScript:checkRefresh();">
     <script type="text/javascript">
     document.body.style.cursor = 'none';
     </script>
