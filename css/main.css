@@ -5,14 +5,12 @@ div {
     height: 100%;
     display: table-cell;
 }
-.iframe{
-  width: 200px;
-}
 div,
 body,
 html {
     height: 100%;
     width: 100%;
+    overflow: hidden
 }
 body{
     display: table;
