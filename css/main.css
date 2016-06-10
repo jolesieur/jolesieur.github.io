@@ -1,20 +1,21 @@
-.centered {
-  width: 800px;
-   height: 400px;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   margin-left: -400px;
-   margin-top: -200px;
+div {
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    height: 100%;
+    display: table-cell;
 }
-
-.box {
-    width:300px;
-    height:300px;
-    background-color:#FFFFFF;
-    position:absolute;
-    margin-left:-150px; /* half of width */
-    margin-top:-150px;  /* half of height */
-    top:50%;
-    left:50%;
+.iframe{
+  width: 200px;
+}
+div,
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: table;
+    height:100%;
+    width: 100%;
 }
