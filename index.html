@@ -2,13 +2,25 @@
 <html>
 <head>
     <!-- link to main stylesheet -->
-    		<meta http-equiv="refresh" content="5">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 <title>Page Title</title>
 </head>
 <body>
     <script type="text/javascript">
     document.body.style.cursor = 'none';
+    
+    function reloadIt()
+  {
+  if (document.getElementById("demo"))
+	{
+	document.getElementById("demo").src = document.getElementById("demo").src;
+	setTimeout("reloadIt()", 5000);
+	}
+   else
+	{
+	setTimeout("reloadIt()", 5000);
+	}
+  }
     </script>
     <div>
 <iframe src="http://free.timeanddate.com/clock/i58flbyf/n165/tlca2/fn16/fs48/ftb/tt0/th1/tb4" frameborder="0" width="673" height="114" align="middle"></iframe>
