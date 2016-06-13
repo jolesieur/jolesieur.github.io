@@ -34,6 +34,7 @@ function RefreshData() {
     document.getElementById("temp").innerHTML=data.current_observation.temp_c;
     document.getElementById("weather").innerHTML=data.current_observation.weather;
     document.getElementById("icon").src=data.current_observation.icon_url;
+    document.getElementById("curr_time").innerHTML="last update :" + data.current_observation.local_time_rfc822;
 	
 	var d = new Date();
     document.getElementById("demo").innerHTML = d.toLocaleTimeString();
