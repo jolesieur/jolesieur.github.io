@@ -18,7 +18,8 @@ weather.onreadystatechange = function () {
      // document.getElementById("date").innerHTML=date;  
   }
 }
-weather.open("GET", "http://api.wunderground.com/api/e0dfea3e2fc1cc56/conditions/forecast/forecast10day/hourly/lang:FR/q/pws:IQCTROIS22.json", true);
+//IQCTROIS22
+weather.open("GET", "http://api.wunderground.com/api/e0dfea3e2fc1cc56/conditions/forecast/forecast10day/hourly/lang:FR/q/pws:IQCTROIS4.json", true);
 weather.send();
 //]]>
 
