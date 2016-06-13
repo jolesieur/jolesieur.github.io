@@ -1,5 +1,7 @@
 // JavaScript Document
 //<![CDATA[
+var myVar = setInterval(RefreshData, 60000);
+
 var WU_API_KEY = 'e0dfea3e2fc1cc56';
 var weather = new XMLHttpRequest();
 weather.onreadystatechange = function () {
@@ -26,7 +28,7 @@ function RefreshData() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
-      var data = JSON.parse(weather.responseText); 
+      var data = JSON.parse(xhttp.responseText); 
     document.getElementById("current_city").innerHTML=data.current_observation.display_location.city;
     document.getElementById("current_weather").innerHTML=data.forecast.txt_forecast.forecastday[0].fcttext_metric;
     document.getElementById("temp").innerHTML=data.current_observation.temp_c;
